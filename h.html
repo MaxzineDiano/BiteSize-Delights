@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="h.css">
+    <link rel="stylesheet" href="cart.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Additional CSS for demonstration */
+        .category-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .category-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .category-container h2 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .category-container img {
+            width: 100%; /* Adjust image width */
+            max-width: 200px; /* Set maximum width */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Four-column layout */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2px;
+        }
+
+        /* Adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .category-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="" class="logo"><img src="logo.png" alt="Logo"></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <ul class="navbar">
+        <li><a href="HOME.html">Home</a></li>
+        <li><a href="MENU.html" class="active">Menu</a></li>
+        <li><a href="ABOUTUS.html">About Us</a></li>
+        <li><a href="CONTACTS.html">Contacts</a></li>
+        <li><a href="#" id="logout-button">Logout</a></li>
+    </ul>
+    <div class="header-icon">
+        <i class='bx bx-cart' id="cart-icon"></i>
+        
+    </div>
+</header>
+
+<div class="category-grid">
+    <a href="#cupcakes" class="category-link">
+        <div class="category-container">
+            <h2>Cupcakes</h2>
+            <img src="3.png" alt="Cupcakes">
+        </div>
+    </a>
+
+    <a href="#cookies" class="category-link">
+        <div class="category-container">
+            <h2>Cookies</h2>
+            <img src="2.png" alt="Cookies">
+        </div>
+    </a>
+
+    <a href="#donuts" class="category-link">
+        <div class="category-container">
+            <h2>Donuts</h2>
+            <img src="1.png" alt="Donuts">
+        </div>
+    </a>
+
+    <a href="#tarts" class="category-link">
+        <div class="category-container">
+            <h2>Tarts</h2>
+            <img src="4.png" alt="Tarts">
+        </div>
+    </a>
+</div>
+<br>
+
+<section class="products" id="cupcakes">
+    <div class="container">
+        <div class="heading">
+            <h2>Cupcakes</h2>
+            <br>
+                <h4>BiteSize Delights offers you the following:</h4>
+        </div>
+        </div>
+
+        <div class="product-container">
+                <div class="menu-box">
+                    <img src="Candy Apple Cupcakes.png" alt="Candy Apple Cupcakes">
+                    <div class="product-info">
+                        <h4>Candy Apple Cupcakes</h4>
+                        <p>₱85.00</p>
+                        <button class="add-to-cart-btn" data-name="Candy Apple Cupcakes" data-price="85">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-box">
+                    <img src="Cookies And Cream Easter Egg Cupcakes.png" alt="Cookies And Cream Easter Egg Cupcakes">
+                    <div class="product-info">
+                        <h4>Cookies And Cream Easter Egg Cupcakes</h4>
+                        <p>₱90.00</p>
+                        <button class="add-to-cart-btn" data-name="Cookies And Cream Easter Egg Cupcakes" data-price="90">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-box">
+                    <img src="Gingerbread Cookies And Cream Cupcakes.png" alt="Gingerbread Cookies And Cream Cupcakes">
+                    <div class="product-info">
+                        <h4>Gingerbread Cookies And Cream Cupcakes</h4>
+                        <p>₱120.00</p>
+                        <button class="add-to-cart-btn" data-name="Gingerbread Cookies And Cream Cupcakes" data-price="120">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-box">
+                    <img src="Gingerbread Tiramisu Cupcakes.png" alt="Gingerbread Tiramisu Cupcakes">
+                    <div class="product-info">
+                        <h4>Gingerbread Tiramisu Cupcakes</h4>
+                        <p>₱120.00</p>
+                        <button class="add-to-cart-btn" data-name="Gingerbread Tiramisu Cupcakes" data-price="120">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-box">
+                    <img src="Midnight Mint Mocha Frappuccino Cupcakes.png" alt="Midnight Mint Mocha Frappuccino Cupcakes">
+                    <div class="product-info">
+                        <h4>Midnight Mint Mocha Frappuccino Cupcakes</h4>
+                        <p>₱130.00</p>
+                        <button class="add-to-cart-btn" data-name="Midnight Mint Mocha Frappuccino Cupcakes" data-price="130">Add to Cart</button>
+                    </div>
+                </div>
+</section>
+
+<section class="products" id="cookies">
+    <div class="container">
+        <div class="heading">
+            <h2>Cookies</h2>
+            <br>
+                <h4>BiteSize Delights offers you the following:</h4>
+            </div>
+            </div>
+        <div class="product-container">
+            <div class="menu-box">
+                <img src="Biscoff Cookes.png" alt="Biscoff Cookies">
+                <div class="product-info">
+                    <h4>Biscoff Cookies</h4>
+                    <p>₱25.00</p>
+                    <button class="add-to-cart-btn" data-name="Biscoff Cookies" data-price="25">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="Chocolate Chips Cookies.png" alt="Chocolate Chips Cookies">
+                <div class="product-info">
+                    <h4>Chocolate Chips Cookies</h4>
+                    <p>₱20.00</p>
+                    <button class="add-to-cart-btn" data-name="Chocolate Chips Cookies" data-price="20">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="Oatmeal and Raisins Cookies.png" alt="Oatmeal and Raisins Cookies">
+                <div class="product-info">
+                    <h4>Oatmeal and Raisins Cookies</h4>
+                    <p>₱35.00</p>
+                    <button class="add-to-cart-btn" data-name="Oatmeal and Raisins Cookies" data-price="35">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="Red Velvet Cookies.png" alt="Red Velvet Cookies">
+                <div class="product-info">
+                    <h4>Red Velvet Cookies</h4>
+                    <p>₱35.00</p>
+                    <button class="add-to-cart-btn" data-name="Red Velvet Cookies" data-price="35">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="Triple Chocolate Cookies.png" alt="Triple Chocolate Cookies">
+                <div class="product-info">
+                    <h4>Triple Chocolate Cookies</h4>
+                    <p>₱30.00</p>
+                    <button class="add-to-cart-btn" data-name="Triple Chocolate Cookies" data-price="30">Add to Cart</button>
+                </div>
+            </div>
+</section>
+
+<section class="products" id="donuts">
+    <div class="container">
+        <div class="heading">
+            <h2>Donuts</h2>
+            <br>
+                <h4>BiteSize Delights offers you the following:</h4>
+        </div
+    </div>>
+        <div class="product-container">
+            <div class="menu-box">
+                <img src="Creme Brûlée Heart Donuts.png" alt="Creme Brûlée Heart Donuts">
+                <div class="product-info">
+                    <h4>Creme Brûlée Heart Donuts</h4>
+                    <p>₱60.00</p>
+                    <button class="add-to-cart-btn" data-name="Creme Brûlée Heart Donuts" data-price="60">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="Glazed Chocolate Covered Espresso Bean Donuts.png" alt="Glazed Chocolate Covered Espresso Bean Donuts">
+                <div class="product-info">
+                    <h4>Glazed Chocolate Covered Espresso Bean Donuts</h4>
+                    <p>₱30.00</p>
+                    <button class="add-to-cart-btn" data-name="Glazed Chocolate Covered Espresso Bean Donuts" data-price="30">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="Maple Glazed Donuts.png" alt="Maple Glazed Donuts">
+                <div class="product-info">
+                    <h4>Maple Glazed Donuts</h4>
+                    <p>₱25.00</p>
+                    <button class="add-to-cart-btn" data-name="Maple Glazed Donuts" data-price="25">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="Matcha Chocolate Glazed Donuts.png" alt="Matcha Chocolate Glazed Donuts">
+                <div class="product-info">
+                    <h4>Matcha Chocolate Glazed Donuts</h4>
+                    <p>₱30.00</p>
+                    <button class="add-to-cart-btn" data-name="Matcha Chocolate Glazed Donuts" data-price="30">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="S'Mores Doughnuts with Chocolate Glaze.png" alt="S'Mores Doughnuts with Chocolate Glaze">
+                <div class="product-info">
+                    <h4>S'Mores Doughnuts with Chocolate Glaze</h4>
+                    <p>₱50.00</p>
+                    <button class="add-to-cart-btn" data-name="S'Mores Doughnuts with Chocolate Glaze" data-price="50">Add to Cart</button>
+                </div>
+            </div>
+</section>
+
+<section class="products" id="tarts">
+    <div class="container">
+        <div class="heading">
+            <h2>Tarts</h2>
+            <br>
+                <h4>BiteSize Delights offers you the following:</h4>
+        </div>
+    </div>
+        <div class="product-container">
+            <div class="menu-box">
+                <img src="Black Forest Chocolate Tart.jpg" alt="Black Forest Chocolate Tart">
+                <div class="product-info">
+                    <h4>Black Forest Chocolate Tart</h4>
+                    <p>₱150.00</p>
+                    <button class="add-to-cart-btn" data-name="Black Forest Chocolate Tart" data-price="150">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="Caramelized White Chocolate Tart with Biscoff Crust.jpg" alt="Caramelized White Chocolate Tart with Biscoff Crust">
+                <div class="product-info">
+                    <h4>Caramelized White Chocolate Tart with Biscoff Crust</h4>
+                    <p>₱150.00</p>
+                    <button class="add-to-cart-btn" data-name="Caramelized White Chocolate Tart with Biscoff Crust" data-price="150">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="Chocolate Ganache Tart.png" alt="Chocolate Ganache Tart">
+                <div class="product-info">
+                    <h4>Chocolate Ganache Tart</h4>
+                    <p>₱150.00</p>
+                    <button class="add-to-cart-btn" data-name="Chocolate Ganache Tart" data-price="150">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="Creme Brulee Tart.png" alt="Creme Brulee Tart">
+                <div class="product-info">
+                    <h4>Creme Brulee Tart</h4>
+                    <p>₱150.00</p>
+                    <button class="add-to-cart-btn" data-name="Creme Brulee Tart" data-price="150">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-box">
+                <img src="Lemon Curd Cheesecake Tart with Basil Lemon Crust.png" alt="Lemon Curd Cheesecake Tart with Basil Lemon Crust">
+                <div class="product-info">
+                    <h4>Lemon Curd Cheesecake Tart with Basil Lemon Crust</h4>
+                    <p>₱150.00</p>
+                    <button class="add-to-cart-btn" data-name="Lemon Curd Cheesecake Tart with Basil Lemon Crust" data-price="150">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="cart" id="cart">
+    <h2>Shopping Cart</h2>
+    <ul class="cart-items" id="cart-items"></ul>
+    <p class="cart-total" id="cart-total">Total: ₱0.00</p>
+</div>
+
+<div class="notification" id="notification">Item added to cart!</div>
+
+<script src="MENU.js"></script>
+<script src="LogOut.js"></script>
+
+</body>
+</html>
